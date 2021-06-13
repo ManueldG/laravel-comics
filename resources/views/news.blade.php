@@ -19,18 +19,8 @@
 
         <div class="content">
             <div class="title m-b-md">
-                <h1>comics</h1>
-                @foreach ($comics as $comic)
-                    <h2>{{ $comic['title'] }}</h2>
-                    <img src="{{ $comic['image'] }}" alt="">
-                    <img src="{{ $comic['image-hero'] }}" alt="">
-                    <img src="{{ $comic['image-cover'] }}" alt="">
+                <h1>news</h1>
 
-                    <h4>{{ $comic['price'] }}$</h4>
-                    {{htmlspecialchars_decode($comic['body'])}}
-                    @dump($comic)
-
-                @endforeach
             </div>
 
 

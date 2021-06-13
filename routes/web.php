@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +19,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/comics', 'HomeController@comics')->name('comics');
 
 Route::get('/news', function () {
+    dump(config('dc-comics'));
     return view('news');
 })->name('news');
 

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\comics;
+
 
 class HomeController extends Controller
 {
@@ -12,8 +12,10 @@ class HomeController extends Controller
     }
 
     public function comics(){
+        $comics = config('dc-database');
 
-        return view('comics','$comics');
+
+        return view('comics',['comics'=>$comics]);
     }
 }
 
