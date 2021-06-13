@@ -2,40 +2,28 @@
 
 @section('content')
 <body>
-    <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
-            <div class="top-right links">
-                @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                @else
-                    <a href="{{ route('login') }}">Login</a>
-
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}">Register</a>
-                    @endif
-                @endauth
-            </div>
-        @endif
-
         <div class="content">
             <div class="title m-b-md">
-                <h1>comics</h1>
-                @foreach ($comics as $comic)
-                    <h2>{{ $comic['title'] }}</h2>
-                    <img src="{{ $comic['image'] }}" alt="">
-                    <img src="{{ $comic['image-hero'] }}" alt="">
-                    <img src="{{ $comic['image-cover'] }}" alt="">
 
-                    <h4>{{ $comic['price'] }}$</h4>
-                    {{htmlspecialchars_decode($comic['body'])}}
-                    @dump($comic)
+                <h1>Comics</h1>
 
-                @endforeach
-            </div>
+                <div class="d-flex flex-wrap">
 
-
-
+                    @foreach ($comics as $comic)
+                    <div class="card">
+                        <img src="{{ $comic['image'] }}" class="card-img-top" alt="">
+                        <a href="{{ $comic['image-hero'] }}">Copertina </a>
+                        <a href="{{ $comic['image-cover']  }}">Cover</a>
+                            <div class="card-body">
+                                <h2 class="card-title">{{ $comic['title'] }}</h2>
+                            <h4>{{ $comic['price'] }}$</h4>
+                            <p class="card-text">{{trim(strip_tags($comic['body']),'&nbsp;')}}</p>
+                            </div>
+                    </div>
+                    @endforeach
+                </div>
         </div>
+
     </div>
 </body>
 
