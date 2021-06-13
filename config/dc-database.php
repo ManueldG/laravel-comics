@@ -1,5 +1,5 @@
 <?php
-$comics = [
+[
     [
         'id' => 100,
         'image' => 'https://www.dccomics.com/sites/default/files/styles/current_series_grid_item192x192/public/series-covers/2018/10/SeriesThumb5_ActionComics_5bd21706e069c3.48220974.jpg?itok=Hi822DTl',
