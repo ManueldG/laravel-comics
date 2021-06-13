@@ -19,7 +19,10 @@
 
         <div class="content">
             <div class="title m-b-md">
-
+                <h1>comics</h1>
+                @foreach ($comics as $comic)
+                    {{ $comic }}
+                @endforeach
             </div>
 
 
@@ -27,10 +30,9 @@
         </div>
     </div>
 </body>
+
+
+
+
 @endsection
-
-
-
-
-
 
