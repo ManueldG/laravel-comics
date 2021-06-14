@@ -1,3 +1,51 @@
-.card{
-    width: 18rem;
+body {
+  background-color: black;
+}
+
+header .container {
+  width: 100%;
+}
+header .nav-item {
+  width: 100%;
+}
+header .nav-item a:hover {
+  color: #0182f9;
+  border-bottom: 8px solid #0182f9;
+}
+
+.card {
+  flex-basis: calc(100vw/7);
+  background-color: black;
+  color: beige;
+}
+
+footer {
+  color: #fff;
+}
+footer hr {
+  border: 20px solid #0182f9;
+  margin: 0;
+  margin-top: 20px;
+  color: #0182f9;
+  background-color: #0182f9;
+}
+footer .barra {
+  background-color: #303030;
+  height: 100px;
+}
+footer .barra button {
+  border: 2px solid #0182f9;
+  height: 40px;
+}
+footer .barra ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+footer .barra ul li {
+  margin: 0 5px;
+  word-wrap: normal;
 }
