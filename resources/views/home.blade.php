@@ -2,31 +2,10 @@
 
 @section('content')
 <body>
-    <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
-            <div class="top-right links">
-                @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                @else
-                    <a href="{{ route('login') }}">Login</a>
-
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}">Register</a>
-                    @endif
-                @endauth
-            </div>
-        @endif
-
-        <div class="content">
-            <div class="title m-b-md">
-
-            </div>
-
-
-
-        </div>
-    </div>
-</body>
+    <h1>DC COMICS</h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus facilis, voluptates ea dicta maiores officiis est. Obcaecati sapiente quae veniam quia, laudantium odit rem. Fuga optio quo neque perferendis repellat!
+    </p>
 @endsection
 
 

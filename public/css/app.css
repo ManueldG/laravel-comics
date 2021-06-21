@@ -1,12 +1,17 @@
 body {
   background-color: black;
+  color: #fff;
+  padding: 0;
 }
 
-header .container {
-  width: 100%;
+header .navbar {
+  width: 100vw;
 }
 header .nav-item {
-  width: 100%;
+  padding: 40% 0;
+}
+header .nav-item a {
+  height: inherit;
 }
 header .nav-item a:hover {
   color: #0182f9;
@@ -26,7 +31,7 @@ footer hr {
   border: 20px solid #0182f9;
   margin: 0;
   margin-top: 20px;
-  color: #0182f9;
+  color: mdg-blue;
   background-color: #0182f9;
 }
 footer .barra {
@@ -41,7 +46,6 @@ footer .barra ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: nowrap;
   list-style: none;
 }
